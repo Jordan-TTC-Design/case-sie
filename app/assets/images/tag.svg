@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="108" height="28" viewBox="0 0 108 28">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_132" data-name="Rectangle 132" width="4" height="28" transform="translate(-2088 9987)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_134" data-name="Rectangle 134" width="12" height="28" transform="translate(-2119 9987)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-tag">
+      <rect width="108" height="28"/>
+    </clipPath>
+  </defs>
+  <g id="tag" clip-path="url(#clip-tag)">
+    <g id="Component_8_8" data-name="Component 8 – 8">
+      <g id="Group_184" data-name="Group 184" transform="translate(2211 -9987)">
+        <g id="Mask_Group_3" data-name="Mask Group 3" transform="translate(-19)" clip-path="url(#clip-path)">
+          <path id="Polygon_2" data-name="Polygon 2" d="M13.247.86a1,1,0,0,1,1.505,0l11.8,13.481A1,1,0,0,1,25.8,16H2.2a1,1,0,0,1-.753-1.659Z" transform="translate(-2084 9987) rotate(90)" fill="#fff"/>
+        </g>
+        <g id="Mask_Group_4" data-name="Mask Group 4" clip-path="url(#clip-path-2)">
+          <path id="Polygon_3" data-name="Polygon 3" d="M14,0,28,16H0Z" transform="translate(-2103 9987) rotate(90)" fill="#fff"/>
+        </g>
+      </g>
+      <path id="Rectangle_135" data-name="Rectangle 135" d="M2,0H92a0,0,0,0,1,0,0V28a0,0,0,0,1,0,0H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

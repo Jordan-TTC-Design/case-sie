@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-Document-iconA">
+      <rect width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="Document-iconA" clip-path="url(#clip-Document-iconA)">
+    <g id="Group_334" data-name="Group 334">
+      <rect id="Rectangle_72" data-name="Rectangle 72" width="64" height="64" fill="none"/>
+      <path id="university-solid" d="M62.227,41.245v1.541a.77.77,0,0,1-.77.77H59.145v1.156a1.156,1.156,0,0,1-1.156,1.156H20.237a1.156,1.156,0,0,1-1.156-1.156V43.557H16.77a.77.77,0,0,1-.77-.77V41.245a.77.77,0,0,1,.476-.712l22.343-8.475a.77.77,0,0,1,.589,0l22.343,8.475A.77.77,0,0,1,62.227,41.245ZM59.916,70.522h-41.6A2.311,2.311,0,0,0,16,72.834v1.541a.77.77,0,0,0,.77.77H61.457a.77.77,0,0,0,.77-.77V72.834A2.311,2.311,0,0,0,59.916,70.522ZM23.7,47.409V65.9H20.237a1.156,1.156,0,0,0-1.156,1.156v1.926H59.145V67.055A1.156,1.156,0,0,0,57.99,65.9H54.523V47.409H48.359V65.9H42.2V47.409H36.032V65.9H29.868V47.409Z" transform="translate(-7.417 -21.59)"/>
+    </g>
+  </g>
+</svg>

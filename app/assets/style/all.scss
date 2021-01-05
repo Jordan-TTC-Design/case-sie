@@ -5,3 +5,8 @@
 // 官方的bs4 css
 @import "mixins";
 @import "bootstrap";
+
+@import "_base.scss";
+@import "_tool.scss";
+@import "_layout.scss";
+@import "_page.scss";

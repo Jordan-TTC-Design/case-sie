@@ -1,0 +1,44 @@
+.page-header{
+width: 100%;
+z-index: 999;
+position: fixed;
+}
+.page__logoBox{
+    padding:24px;
+    border-radius:0 0 8px 0 ;
+    background-color: $white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header__nav{
+    flex-grow: 1;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding-right: 50px;
+    .nav__link{
+        color:$gray-darken;
+        padding: 8px 12px;
+        min-height: 44px;
+        line-height: 44px;
+        font-weight: bold;
+    }
+    .nav__link:hover{
+        color:$pr-darken;
+    }
+    .callMe{
+        border:1px solid $gray-line;
+        .fa-phone-alt{
+            color:$primary;
+        }
+    }
+    .callMe:hover{
+        border:1px solid $primary;
+    }
+}
+
+.section-padding{
+    padding: 80px 0;
+}
