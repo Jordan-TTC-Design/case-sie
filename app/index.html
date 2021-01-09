@@ -9,20 +9,24 @@ current: index
 <div class="container-fluid">
   <div class="row">
     <div class="section-firstView position-relative">
-      <div class="section-bg">
-        <div class="txtBox">
+      <div class="section-bg d-flex justify-content-center align-items-center position-relative">
+        <div>
           <h2 class="pageTitle text-white text-center mb-6">新型態殯葬服務</h2>
           <h4 class="subTitle text-white text-center">結合細心的禮儀專業 ＆ 方便的數位服務</h4>
         </div>
         <div class="login-box">
-          <a class="login-btn login--family text--column ">家屬專區</a>
-          <a class="login-btn login--company text--column ">禮儀專區</a>
+          <a href="https://sie.mysie.com.tw/" target="_blank" class="login-btn login--family text--column ">家屬專區</a>
+          <a href="https://service.mysie.com.tw/" target="_blank"
+            class="login-btn login--company text--column ">禮儀專區</a>
+        </div>
+        <div class=" col-4 banner__txtBox">
+          <p class="text-white">人生如戲，完美落幕之時，我們將陪在您身邊 以最真誠的心以及服務態度為您服務， 認真與專業是我們的保證，尊重與服務是我們的細心。</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-<section class="section-companyConcept section-padding ">
+<section id="section-companyConcept" class="section-companyConcept section-padding ">
   <h3 class="sectionTitle mb-8 text-center text-gray-darken">企業理念</h3>
   <div class="container">
     <div class="row d-flex justify-content-end">
@@ -43,7 +47,7 @@ current: index
   </div>
   <div class="section-bg"></div>
 </section>
-<section class="section-history section-padding pt-0">
+<section id="section-history" class="section-history section-padding pt-0">
   <h3 class="sectionTitle mb-8 text-center text-gray-darken pt-0">沿革</h3>
   <div class="container">
     <div class="row">
@@ -79,7 +83,7 @@ current: index
     </div>
   </div>
 </section>
-<section class="section-service section-padding ">
+<section id="section-service" class="section-service section-padding ">
   <h3 class="sectionTitle mb-8 text-center text-gray-darken">禮儀服務</h3>
   <div class="container">
     <div class="row">
@@ -141,13 +145,13 @@ current: index
     </div>
   </div>
 </section>
-<section class="section-publicInfo section-padding pt-0">
+<section id="section-publicInfo" class="section-publicInfo section-padding pt-0">
   <h3 class="sectionTitle mb-4 text-center text-gray-darken">公開資訊文件</h3>
   <p class="sectionSubTitle mb-8 text-center text-gray-darken">仁本禮儀有限公司成立，同年得標新竹殯葬管理所羽化館合作案。</p>
   <div class="container">
     <div class="row">
       <div class="col-3">
-        <div class="card">
+        <div type="button" class="card" data-toggle="modal" data-target="#documentOperation">
           <div class="card__icon mb-2">
             <img src="./assets/images/Document-iconA.svg" alt="營業文件">
           </div>
@@ -155,7 +159,7 @@ current: index
         </div>
       </div>
       <div class="col-3">
-        <div class="card">
+        <div type="button" class="card" data-toggle="modal" data-target="#documentFinance">
           <div class="card__icon mb-2">
             <img src="./assets/images/Document-iconB.svg" alt="財務證明">
           </div>
@@ -163,7 +167,7 @@ current: index
         </div>
       </div>
       <div class="col-3">
-        <div class="card">
+        <div type="button" class="card" data-toggle="modal" data-target="#documentService">
           <div class="card__icon mb-2">
             <img src="./assets/images/Document-iconC.svg" alt="服務契約">
           </div>
@@ -171,7 +175,7 @@ current: index
         </div>
       </div>
       <div class="col-3">
-        <div class="card">
+        <div type="button" class="card" data-toggle="modal" data-target="#documentOther">
           <div class="card__icon mb-2">
             <img src="./assets/images/Document-iconD.svg" alt="其他文件">
           </div>
@@ -181,25 +185,24 @@ current: index
     </div>
   </div>
 </section>
-<section class="section-relativeWeb section-padding bg-gray-200">
+<section id="section-relativeWeb" class="section-relativeWeb section-padding bg-gray-200">
   <h3 class="sectionTitle mb-8 text-center text-gray-darken">相關網站連結</h3>
   <div class="container">
     <div class="row d-flex justify-content-center">
       <div class="col-6">
         <div class="btn-box">
-          <div class="btn mb-4">
+          <button type="button" class="btn mb-4" data-toggle="modal" data-target="#relativeLinkGoverment">
             <h5 class="btn__txt text-gray-darken"><i class="fas fa-angle-right text-primary "></i>各地方政府殯葬網站</h5>
             <p><i class="fas fa-plus text-primary"></i></p>
-          </div>
-          <div class="btn mb-4">
+          </button>
+          <button type="button" class="btn mb-4" data-toggle="modal" data-target="#relativeLinkDeath">
             <h5 class="btn__txt text-gray-darken"><i class="fas fa-angle-right text-primary "></i>殯葬相關網站</h5>
             <p><i class="fas fa-plus text-primary"></i></p>
-
-          </div>
-          <div class="btn">
+          </button>
+          <button type="button" class="btn" data-toggle="modal" data-target="#relativeLinkSchool">
             <h5 class="btn__txt text-gray-darken"><i class="fas fa-angle-right text-primary "></i>殯葬學術相關網站</h5>
             <p><i class="fas fa-plus text-primary "></i></p>
-          </div>
+          </button>
         </div>
       </div>
       <div class="col-4">
@@ -217,19 +220,19 @@ current: index
       <div class="col-3">
         <ul class="bottom-menu">
           <li class="menu__item">
-            <a href="#" class="btn"><i class="fas fa-angle-right text-primary "></i>企業理念</a>
+            <a href="#" class="btn" title="companyConcept"><i class="fas fa-angle-right text-primary "></i>企業理念</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="btn"><i class="fas fa-angle-right text-primary "></i>沿革</a>
+            <a href="#" class="btn" title="history"><i class="fas fa-angle-right text-primary "></i>沿革</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="btn"><i class="fas fa-angle-right text-primary "></i>禮儀服務</a>
+            <a href="#" class="btn" title="service"><i class="fas fa-angle-right text-primary "></i>禮儀服務</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="btn"><i class="fas fa-angle-right text-primary "></i>公開資訊</a>
+            <a href="#" class="btn" title="publicInfo"><i class="fas fa-angle-right text-primary "></i>公開資訊</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="btn"><i class="fas fa-angle-right text-primary "></i>相關網站連結</a>
+            <a href="#" class="btn" title="relativeWeb"><i class="fas fa-angle-right text-primary "></i>相關網站連結</a>
           </li>
         </ul>
       </div>
@@ -287,3 +290,581 @@ current: index
     </div>
   </div>
 </section>
+<!-- Modal -->
+<!-- 營業文件 -->
+<div class="modal fade" id="documentOperation" tabindex="-1" role="dialog" aria-labelledby="documentOperationTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered 	modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-header__txtBox">
+          <div class="mb-2 d-flex justify-content-center align-items-center">
+            <div class="card__icon mr-2">
+              <img src="./assets/images/Document-iconA.svg" alt="營業文件">
+            </div>
+            <h5 class="modal-title subTitle font-weight-bold text-darken" id="documentOperationTitle">營業文件</h5>
+          </div>
+          <p class="txtBox__subtxt text-gray-darken">主管機關許可經營之證明文件</p>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="modal-body mb-8">
+        <ul class="modal__linkList">
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link" href="https://www.mysie.com.tw/Public/%E7%B6%93%E6%BF%9F%E9%83%A8%E5%87%BD.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>經濟部函</p>
+            </a>
+          </li>
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link"
+              href="https://www.mysie.com.tw/Public/%E6%96%B0%E7%AB%B9%E5%B8%82%E6%94%BF%E5%BA%9C%E5%87%BD.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>新竹市政府-設立登記核准函</p>
+            </a>
+          </li>
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link"
+              href="https://www.mysie.com.tw/Public/%E6%96%B0%E7%AB%B9%E5%B8%82%E6%94%BF%E5%BA%9C%E5%87%BD2.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>新竹市政府-生前契約銷售核准函</p>
+            </a>
+          </li>
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link" href="https://www.mysie.com.tw/Public/%E5%95%86%E5%B7%A5%E7%99%BB%E8%A8%98.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>工商登記</p>
+            </a>
+          </li>
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link"
+              href="https://www.mysie.com.tw/Public/%E6%96%B0%E7%AB%B9%E5%B8%82%E6%94%BF%E5%BA%9C%E5%8E%9F%E5%A7%8B%E6%A0%B8%E5%87%86%E6%96%87%E4%BB%B6.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>原始工商登記</p>
+            </a>
+          </li>
+          <li class="linkList__item linkList__item--100 d-flex align-items-center">
+            <p class="text-nowrap px-4 text-gray-darken">殯葬公會會員證書</p>
+            <a class="item__link w-auto"
+              href="https://www.mysie.com.tw/Public/%E6%AE%AF%E8%91%AC%E5%85%AC%E6%9C%83%E6%9C%83%E5%93%A1%E8%AD%89%E6%9B%B8-109.jpg"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>109</p>
+            </a>
+            <a class="item__link w-auto"
+              href="https://www.mysie.com.tw/Public/%E6%AE%AF%E8%91%AC%E5%85%AC%E6%9C%83%E6%9C%83%E5%93%A1%E8%AD%89%E6%9B%B8-108.jpg"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>108</p>
+            </a>
+            <a class="item__link w-auto"
+              href="https://www.mysie.com.tw/Public/%E6%AE%AF%E8%91%AC%E5%85%AC%E6%9C%83%E6%9C%83%E5%93%A1%E8%AD%89%E6%9B%B8-107.jpg"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>107</p>
+            </a>
+            <a class="item__link w-auto"
+              href="https://www.mysie.com.tw/Public/%E6%AE%AF%E8%91%AC%E5%85%AC%E6%9C%83%E6%9C%83%E5%93%A1%E8%AD%89%E6%9B%B8-106.jpg"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>106</p>
+            </a>
+          </li>
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link" href="#" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>主管機關核准販售生前殯葬服務契約及一定規模之證明文件</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- 財務證明 -->
+<div class="modal fade" id="documentFinance" tabindex="-1" role="dialog" aria-labelledby="documentFinanceTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered 	modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-header__txtBox">
+          <div class="mb-2 d-flex justify-content-center align-items-center">
+            <div class="card__icon mr-2">
+              <img src="./assets/images/Document-iconB.svg" alt="營業文件">
+            </div>
+            <h5 class="modal-title subTitle font-weight-bold text-darken" id="documentFinanceTitle">財務證明</h5>
+          </div>
+          <p class="txtBox__subtxt text-gray-darken">主管機關許可經營之證明文件</p>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="modal-body mb-8">
+        <ul class="modal__linkList">
+          <li class="linkList__item linkList__item--100">
+            <!-- 要alert108年尚未銷售，餘額為0 -->
+            <a class="item__link" href="#" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>生前殯葬服務定型化契約預收費用交付信託業管理之信託本金、餘額及運用情形</p>
+            </a>
+          </li>
+          <li class="linkList__item linkList__item--100 d-flex align-items-center">
+            <p class="text-nowrap px-4 text-gray-darken">近三年財務報表</p>
+            <a class="item__link w-auto"
+              href="https://www.mysie.com.tw/Public/107%E5%B9%B4%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>107</p>
+            </a>
+            <a class="item__link w-auto"
+              href="https://www.mysie.com.tw/Public/105%E5%B9%B4%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>105</p>
+            </a>
+            <a class="item__link w-auto"
+              href="https://www.mysie.com.tw/Public/104%E5%B9%B4%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>104</p>
+            </a>
+
+          </li>
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link" href="https://www.skbank.com.tw/S.html" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>信託金額查詢</p>
+            </a>
+          </li>
+          <li class="linkList__item linkList__item--100 d-flex align-items-center flex-wrap">
+            <p class="text-nowrap py-3 px-4 text-gray-darken w-100">年度信託業者編制之信託財產結算報告書 - 109年度</p>
+            <a class="item__link w-auto" href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10901.pdf" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>1月</p>
+            </a>
+            <a class="item__link w-auto" href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10902.pdf" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>2月</p>
+            </a>
+            <a class="item__link w-auto" href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10903.pdf" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>3月</p>
+            </a>
+            <a class="item__link w-auto" href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10904.pdf" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>4月</p>
+            </a>
+            <a class="item__link w-auto" href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10905.pdf" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>5月</p>
+            </a>
+            <a class="item__link w-auto" href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10906.pdf" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>6月</p>
+            </a>
+          </li>
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link" href="https://www.mysie.com.tw/public/001.jpg" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>每雙月份信託業者編制之信託財產目錄及收支計算表</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- 服務契約 -->
+<div class="modal fade" id="documentService" tabindex="-1" role="dialog" aria-labelledby="documentServiceTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered 	modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-header__txtBox">
+          <div class="mb-2 d-flex justify-content-center align-items-center">
+            <div class="card__icon mr-2">
+              <img src="./assets/images/Document-iconC.svg" alt="營業文件">
+            </div>
+            <h5 class="modal-title subTitle font-weight-bold text-darken" id="documentServiceTitle">服務契約</h5>
+          </div>
+          <p class="txtBox__subtxt text-gray-darken">主管機關許可經營之證明文件</p>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="modal-body mb-8">
+        <ul class="modal__linkList">
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link"
+              href="https://www.mysie.com.tw/Public/%E7%B0%A1%E6%84%9B%E5%AE%9A%E5%9E%8B%E5%8C%96%E5%A5%91%E7%B4%84%E5%AE%B6%E7%94%A8%E5%9E%8B1071224%E5%85%A7%E6%94%BF%E9%83%A8%E9%80%81%E5%AF%A9%E7%89%88.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>生前殯葬服務定型化契約一 - 簡愛生前契約</p>
+            </a>
+          </li>
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link"
+              href="https://www.mysie.com.tw/Public/%E7%9C%9F%E6%83%85%E5%AE%9A%E5%9E%8B%E5%8C%96%E5%A5%91%E7%B4%84%E5%AE%B6%E7%94%A8%E5%9E%8B1071224%E5%85%A7%E6%94%BF%E9%83%A8%E9%80%81%E5%AF%A9%E7%89%88.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>生前殯葬服務定型化契約二 - 簡愛生前契約</p>
+            </a>
+          </li>
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link"
+              href="https://www.mysie.com.tw/Public/%E5%9C%93%E6%BB%BF%E5%AE%9A%E5%9E%8B%E5%8C%96%E5%A5%91%E7%B4%84%E5%AE%B6%E7%94%A8%E5%9E%8B1071224%E5%85%A7%E6%94%BF%E9%83%A8%E9%80%81%E5%AF%A9%E7%89%88.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>生前殯葬服務定型化契約三 - 簡愛生前契約</p>
+            </a>
+          </li>
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link"
+              href="https://www.mysie.com.tw/Public/%E5%AF%8C%E8%B2%B4%E5%AE%9A%E5%9E%8B%E5%8C%96%E5%A5%91%E7%B4%84%E5%AE%B6%E7%94%A8%E5%9E%8B1071224%E5%85%A7%E6%94%BF%E9%83%A8%E9%80%81%E5%AF%A9%E7%89%88.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>生前殯葬服務定型化契約四 - 簡愛生前契約</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- 其他文件 -->
+<div class="modal fade" id="documentOther" tabindex="-1" role="dialog" aria-labelledby="documentOtherTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered 	modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-header__txtBox">
+          <div class="mb-2 d-flex justify-content-center align-items-center">
+            <div class="card__icon mr-2">
+              <img src="./assets/images/Document-iconD.svg" alt="營業文件">
+            </div>
+            <h5 class="modal-title  subTitle font-weight-bold text-darken" id="documentOtherTitle">其他文件</h5>
+          </div>
+          <p class="txtBox__subtxt text-gray-darken">主管機關許可經營之證明文件</p>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="modal-body mb-8">
+        <ul class="modal__linkList">
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link"
+              href="https://www.mysie.com.tw/Public/%E5%A7%94%E8%A8%97%E9%8A%B7%E5%94%AE%E4%B9%8B%E5%85%AC%E5%8F%B8%E6%88%96%E5%95%86%E6%A5%AD%E5%90%8D%E5%96%AE%E5%8F%8A%E5%9F%BA%E6%9C%AC%E8%B3%87%E6%96%99.pdf?u=111111"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>委託銷售之公司或商業名單及基本資料</p>
+            </a>
+          </li>
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link"
+              href="https://www.mysie.com.tw/Public/%E5%AE%A2%E6%88%B6%E6%9C%8D%E5%8B%99%E7%94%B3%E8%AB%8B%E5%96%AE.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>客戶服務申請單</p>
+            </a>
+          </li>
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link"
+              href="https://www.mysie.com.tw/Public/%E5%AE%A2%E6%88%B6%E5%9F%BA%E6%9C%AC%E8%B3%87%E6%96%99%E8%AE%8A%E6%9B%B4%E7%94%B3%E8%AB%8B%E6%9B%B8.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>客戶基本資料變更申請書</p>
+            </a>
+          </li>
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link"
+              href="https://www.mysie.com.tw/Public/%E8%A3%9C%E7%99%BC%E7%94%B3%E8%AB%8B%E6%9B%B8.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>補發申請書</p>
+            </a>
+          </li>
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link"
+              href="https://www.mysie.com.tw/Public/%E8%A7%A3%E7%B4%84%E7%94%B3%E8%AB%8B%E6%9B%B8.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>解約申請書</p>
+            </a>
+          </li>
+          <li class="linkList__item linkList__item--100">
+            <a class="item__link"
+              href="https://www.mysie.com.tw/Public/%E5%84%AA%E7%A6%AE%E5%B0%88%E5%88%A9_104211085.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>專利證明</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- 各地方政府殯葬網站 -->
+<div class="modal fade" id="relativeLinkGoverment" tabindex="-1" role="dialog"
+  aria-labelledby="relativeLinkGovermentTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered 	modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-header__txtBox">
+          <h5 class="modal-title mb-2 subTitle font-weight-bold text-darken" id="relativeLinkGovermentTitle">各地方政府殯葬網站
+          </h5>
+          <p class="txtBox__subtxt text-gray-darken">主管機關許可經營之證明文件</p>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="modal-body mb-8">
+        <ul class="modal__linkList">
+          <li class="linkList__item ">
+            <a class="item__link" href="https://mort.moi.gov.tw" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>內政部全國殯葬資訊入口網</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="http://www.klms.gov.tw" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>基隆市殯葬管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="https://mso.gov.taipei" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>台北市殯葬管理處</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="https://www.ca.ntpc.gov.tw" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>新北市殯葬管理處</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="https://www.tycg.gov.tw/funeral" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>桃園市殯葬管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="https://dep-hcfaa.hccg.gov.tw" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>新竹市殯葬管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link"
+              href="http://www.hcctt.gov.tw/iframcontent_edit.php?menu=2503&typeid=2390&typeid2=2461" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>新竹縣竹東鎮殯葬管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link"
+              href="https://www.toufen.gov.tw/default.aspx?404;https://www.toufen.gov.tw:80/toufen/11-15.php"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>苗栗縣頭份鎮殯葬管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="https://www.chunan.gov.tw" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>苗栗縣竹南鎮殯葬管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="https://www.yuanli.gov.tw" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>苗栗縣苑裡鎮殯葬管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="http://mortuary.taichung.gov.tw/" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>台中市生命禮儀管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="https://civil.chcg.gov.tw/07other/other01_list.asp?topsn=2881"
+              target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>彰化縣政府民政處</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" class="item__link" href="http://temple.ntc.gov.tw/" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>南投市殯葬管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="https://funeral.nantou.gov.tw/" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>南投縣殯葬資訊園區</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="https://www.mnjn.gov.tw/" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>南投縣民間鄉殯葬管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item">
+            <a class="item__link" href="http://huwei.tonch.com.tw/" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>雲林縣虎尾鎮殯葬管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="http://www.tuku.gov.tw/" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>雲林縣土庫鎮殯葬管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="http://www.ccmso.gov.tw/" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>嘉義市殯葬管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="https://lioujiao.cyhg.gov.tw" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>嘉義市六腳鄉殯葬管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item">
+            <a class="item__link" href="https://mort.tainan.gov.tw/" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>台南市殯葬管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item">
+            <a class="item__link" href="https://mso.kcg.gov.tw/ch/" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>高雄市殯葬管理處</p>
+            </a>
+          </li>
+          <li class="linkList__item">
+            <a class="item__link" href="https://www.ptcg.gov.tw/Default.aspx" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>屏東市公所</p>
+            </a>
+          </li>
+          <li class="linkList__item">
+            <a class="item__link" href="http://web.pthg.gov.tw/" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>屏東縣長治鄉殯葬管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item">
+            <a class="item__link" href="https://fuyuan.e-land.gov.tw/Default.aspx" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>宜蘭縣殯葬管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item">
+            <a class="item__link" href="http://mso.lotong.gov.tw/mso/service1.asp" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>宜蘭縣羅東鎮殯葬管理所</p>
+            </a>
+          </li>
+          <li class="linkList__item">
+            <a class="item__link" href="http://www.sinchen.gov.tw/" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>花蓮縣新城鄉殯葬管理所</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 殯葬相關網站 -->
+<div class="modal fade" id="relativeLinkDeath" tabindex="-1" role="dialog" aria-labelledby="relativeLinkDeathTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered 	modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-header__txtBox">
+          <h5 class="modal-title mb-2 subTitle font-weight-bold text-darken" id="relativeLinkDeathTitle">殯葬相關網站</h5>
+          <p class="txtBox__subtxt text-gray-darken">主管機關許可經營之證明文件</p>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="modal-body mb-8">
+        <ul class="modal__linkList">
+          <li class="linkList__item ">
+            <a class="item__link" href="http://www.cpc.ey.gov.tw/" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>行政院消費者保護會</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="https://www.gov.tw/" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p></p>殯葬流程簡介</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="http://www.fbm.taipei.gov.tw/OR/index.html" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p></p>政府入口網『生命禮儀』申辦表單</p>
+            </a>
+          </li>
+          <li class="linkList__item">
+            <a class="item__link" href="http://dr.zzhr.taipei/" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p></p>點滴身後事資訊網</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="http://www.taiwanfuneral.com/index.php" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p></p>台灣殯葬資訊網</p>
+            </a>
+          </li>
+          <li class="linkList__item">
+            <a class="item__link" href="http://www.chinesefuneral.org.tw/index2.html" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p></p>中華殯葬禮儀協會</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="http://www.chfba.org.tw/news02.php?no=5" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>中華民國葬儀商業同業公會全國聯合會員名冊</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 殯葬學術相關網站 -->
+<div class="modal fade" id="relativeLinkSchool" tabindex="-1" role="dialog" aria-labelledby="relativeLinkSchoolTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered 	modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-header__txtBox">
+          <h5 class="modal-title mb-2 subTitle font-weight-bold text-darken" id="relativeLinkSchoolTitle">殯葬學術相關網站</h5>
+          <p class="txtBox__subtxt text-gray-darken">主管機關許可經營之證明文件</p>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="modal-body mb-8">
+        <ul class="modal__linkList">
+          <li class="linkList__item ">
+            <a class="item__link" href="http://dnl.ncue.edu.tw/" target="_blank"><i class="fas fa-link mr-2"></i>
+              <p>生死學資訊網站</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="http://lads2.nhu.edu.tw/main.php" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>南華大學生死學系(所)</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="http://lc.hcu.edu.tw/front/bin/home.phtml" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>玄奘大學生命禮儀學位學程</p>
+            </a>
+          </li>
+          <li class="linkList__item">
+            <a class="item__link" href="http://jtwww.jente.edu.tw/bin/home.php" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>仁德醫護生命關懷事業科</p>
+            </a>
+          </li>
+          <li class="linkList__item ">
+            <a class="item__link" href="https://a31.tajen.edu.tw/bin/home.php" target="_blank"><i
+                class="fas fa-link mr-2"></i>
+              <p>大仁科大生命關懷事業學士學位學程</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

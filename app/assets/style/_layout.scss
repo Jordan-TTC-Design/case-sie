@@ -1,23 +1,40 @@
-.page-header{
+.header{
 width: 100%;
 z-index: 999;
 position: fixed;
 }
-.page__logoBox{
+.header__logoBox{
     padding:24px;
     border-radius:0 0 8px 0 ;
     background-color: $white;
+}
+.header--scroll{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
+.logoBox__logo{
+    margin-bottom: 12px;
+}
+.header__logoBox.header--scroll{
+    padding: 8px 8px 8px 50px;
+    border-radius: 0;
+    background-color: rgba(255,255,255,0.95);
+    .logoBox__logo{
+        margin-bottom: 0;
+        img{
+        width: 80px;
+        }
+    }
+}
 .header__nav{
     flex-grow: 1;
     height: 80px;
     display: flex;
     align-items: center;
     background-color: $white;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding-right: 50px;
+    &.header--scroll{
+        background-color: rgba(255,255,255,0.95);
+    }
     .nav__link{
         color:$gray-darken;
         padding: 8px 12px;
@@ -41,4 +58,43 @@ position: fixed;
 
 .section-padding{
     padding: 80px 0;
+}
+
+// footer
+.footer{
+    background-color: #F7F7F7;
+    padding: 32px 50px;
+    
+    .copyRight{
+        font-size: 10px;
+        color:$gray-darken;
+    }
+}
+.conpanyInfoList{
+    flex-wrap: wrap;
+    .list__item{
+        width: 36%;
+        margin-right: 16px;
+    }
+}
+.pageUp{
+    background-color: $primary;
+    color:$white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -72px;
+    right: 0;
+    cursor: pointer;
+    p{
+        font-size: 12px;
+    }
+    &:hover{
+        color:$pr-darken;
+    }
 }

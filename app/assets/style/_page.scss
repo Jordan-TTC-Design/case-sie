@@ -7,16 +7,18 @@
         background-size: cover;
         background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.3)),url(../images/sunset-two-people.jpg);
     }
-    .txtBox{
-       position: relative;
-       top: 50%;
-    //    transform: translateY(-50%);
+    .banner__txtBox{
+        position: absolute;
+    //    top: 50%;
+    bottom: 10%;
+    left: 5%;
     }
 }
 .login-box{
     position: fixed;
     right: 0;
     top: 160px;
+    z-index: 999;
     .login-btn{
         display: block;
         font-size: 24px;
@@ -25,8 +27,10 @@
         padding: 12px 8px;
         letter-spacing: 4px;
         cursor: pointer;
+        &:hover{
+            color:$dark;
+        }
     }
-    
     .login--family{
         border-radius: 8px 0 0 0;
         background-color: $pr-darken;
