@@ -52,7 +52,7 @@ $(document).ready(() => {
     // console.log('ok');
     //對應menu的a的title
     var sectionTitle = this.title;
-    var id = "#section-" + sectionTitle;
+    let id = "#section-" + sectionTitle;
     // console.log(id);
     //找到每個section位置y值
     scrollPoint = $(id).offset().top;
@@ -61,5 +61,18 @@ $(document).ready(() => {
     // console.log(lastScrollPoint);
     //進行運動
     $("html,body").animate({ scrollTop: lastScrollPoint }, 800);
+  });
+  var serviceList = document.querySelector('.list');
+  //展開禮儀服務內容
+  $(".section-service__card,.this").click(function (event) {
+    let cardNumber=this.title;
+    console.log(cardNumber);
+    var cardId = "#section-service__card--" + cardNumber +'__content';
+    console.log(cardId);
+    // $('id').toggleClass('d-none');
+  // $('cardId).removeClass('d-none');
+  // alert(id)
+  // $('.card__openBtn').addClass('w-100');
+
   });
 });

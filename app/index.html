@@ -5,7 +5,7 @@ engine: ejs
 current: index
 ---
 
-
+<!-- firstView -->
 <div class="container-fluid">
   <div class="row">
     <div class="section-firstView position-relative">
@@ -26,16 +26,18 @@ current: index
     </div>
   </div>
 </div>
+
+<!-- 企業理念 -->
 <section id="section-companyConcept" class="section-companyConcept section-padding ">
   <h3 class="sectionTitle mb-8 text-center text-gray-darken">企業理念</h3>
   <div class="container">
     <div class="row d-flex justify-content-end">
-      <div class="col-5">
+      <div class="col-lg-5 col-md-6">
         <div class="section-imgBox">
           <div class="imgBox__bg"></div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-md-6 col-12">
         <div class="txtBox ">
           <h2 class="pageTitle mb-8 ">服務<span class="text-primary">，</span>用心<span class="text-primary">，</span>禮儀</h2>
           <p class="text-gray-darken">
@@ -47,6 +49,7 @@ current: index
   </div>
   <div class="section-bg"></div>
 </section>
+<!-- 沿革 -->
 <section id="section-history" class="section-history section-padding pt-0">
   <h3 class="sectionTitle mb-8 text-center text-gray-darken pt-0">沿革</h3>
   <div class="container">
@@ -54,103 +57,114 @@ current: index
       <div class="col-12">
         <div class="history-row d-flex">
           <div class="row__item">
-            <p class="subTxt  mb-3">民國</p>
-            <h5 class="history__year subTitle mb-6 ">96</h5>
-            <p class="text-center">仁本禮儀有限公司成立，同年得標新竹殯葬管理所羽化館合作案。</p>
+            <p class="subTxt mb-lg-3 mb-0 mr-lg-0 mr-3 flex-shrink-0">民國</p>
+            <h5 class="history__year subTitle mb-lg-3 mb-0 flex-shrink-0">96</h5>
+            <p class="txtContent flex-shrink-1">仁本禮儀有限公司成立，同年得標新竹殯葬管理所羽化館合作案。</p>
           </div>
           <div class="row__item">
-            <p class="subTxt mb-3">民國</p>
-            <h5 class="history__year subTitle mb-6">100</h5>
-            <p class="text-center">研發殯葬雲端系統</p>
+            <p class="subTxt mb-lg-3 mb-0 mr-lg-0 mr-3">民國</p>
+            <h5 class="history__year subTitle mb-lg-3 mb-0">100</h5>
+            <p class="txtContent">研發殯葬雲端系統</p>
           </div>
           <div class="row__item">
-            <p class="subTxt mb-3">民國</p>
-            <h5 class="history__year subTitle mb-6">102</h5>
-            <p class="text-center">增資為優禮服務股份有限公司</p>
+            <p class="subTxt mb-lg-3 mb-0 mr-lg-0 mr-3">民國</p>
+            <h5 class="history__year subTitle mb-lg-3 mb-0">102</h5>
+            <p class="txtContent">增資為優禮服務股份有限公司</p>
           </div>
           <div class="row__item">
-            <p class="subTxt mb-3">民國</p>
-            <h5 class="history__year subTitle mb-6">107</h5>
-            <p class="text-center">申請發行生前契約</p>
+            <p class="subTxt mb-lg-3 mb-0 mr-lg-0 mr-3">民國</p>
+            <h5 class="history__year subTitle mb-lg-3 mb-0">107</h5>
+            <p class="txtContent">申請發行生前契約</p>
           </div>
           <div class="row__item">
-            <p class="subTxt mb-3 text-pr-light">.</p>
-            <h5 class="history__feature subTitle mb-6">未來</h5>
-            <p class="text-center">未來會持續為您服務</p>
+            <p class="subTxt mb-lg-3 mb-0 text-pr-light">.</p>
+            <h5 class="history__feature subTitle mb-lg-3 mb-0 ">未來</h5>
+            <p class="txtContent">未來會持續為您服務</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- 禮儀服務 -->
 <section id="section-service" class="section-service section-padding ">
   <h3 class="sectionTitle mb-8 text-center text-gray-darken">禮儀服務</h3>
-  <div class="container">
+  <div class="container accordion">
     <div class="row">
-      <div class="col-6 mb-6">
-        <div class="section__card ">
-          <h5 class="card__title">臨終關懷</h5>
-          <p>
+      <div class="col-md-6 col-12 mb-md-6 mb-4">
+        <div id="section-service__card--1" class="section-service__card" title="1">
+          <h5 class="card__title mb-lg-4 mb-md-3 mb-0">臨終關懷</h5>
+          <p class="content d-md-block   collapse mt-6" id="multiCollapseExample1">
             突遇變故時，我們關心的是您與親人心靈上所受到的創傷，因此，當我們提供專業的諮詢服務時，完全針對您的需要，適時提供服務。◎設立廿四小時臨終諮詢專線，提供臨終時禮儀、證件辦理及相關事宜解答，全年無休。◎提供臨終逢喪應進行之禮儀流程及準備用品。◎提醒家屬臨終者逝世後應辦理文件等各種注意事項。
             ◎提供完整的追思喪禮服務流程說明與本公司會員權益說明。 ◎介紹本公司所提供之各項整合性週邊服務。公司處理的行程。</p>
+          <div class="card__openBtn d-md-none d-flex" type="button" data-toggle="collapse"
+            data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1"><i
+              class="fas fa-chevron-down"></i></div>
         </div>
       </div>
-      <div class="col-6 mb-6">
-        <div class="section__card">
-          <h5 class="card__title">禮儀諮詢</h5>
-          <p>
+      <div class="col-md-6 col-12 mb-md-6 mb-4">
+        <div id="section-service__card--2" class="section-service__card" title="2">
+          <h5 class="card__title mb-lg-4 mb-md-3 mb-0">禮儀諮詢</h5>
+          <p class="content d-md-block d-none">
             突遇變故時，我們關心的是您與親人心靈上所受到的創傷，因此，當我們提供專業的諮詢服務時，完全針對您的需要，適時提供服務。◎設立廿四小時臨終諮詢專線，提供臨終時禮儀、證件辦理及相關事宜解答，全年無休。◎提供臨終逢喪應進行之禮儀流程及準備用品。◎提醒家屬臨終者逝世後應辦理文件等各種注意事項。
             ◎提供完整的追所提供之各項整程。</p>
+          <div class="card__openBtn d-md-none d-flex"><i class="fas fa-chevron-down"></i></div>
         </div>
       </div>
-      <div class="col-6 mb-6">
-        <div class="section__card ">
-          <h5 class="card__title">規劃服務</h5>
-          <p>
+      <div class="col-md-6 col-12 mb-md-6 mb-4">
+        <div id="section-service__card--3" class="section-service__card " title="3">
+          <h5 class="card__title mb-lg-4 mb-md-3 mb-0">規劃服務</h5>
+          <p class="content d-md-block d-none">
             突遇變故時，臨終諮詢專線，提供臨終時禮儀、證件辦理及相關事宜解答，全年無休。◎提供臨終逢喪應進行之禮儀流程及準備用品。◎提醒家屬臨終者逝世後應辦理文件等各種注意事項。
             ◎提供完整的追思喪禮服務流程說明與本公司會員權益說明。 ◎介紹本公司所提供之各項整合性週邊服務。公司處理的行程。</p>
+          <div class="card__openBtn d-md-none d-flex"><i class="fas fa-chevron-down"></i></div>
         </div>
       </div>
-      <div class="col-6 mb-6">
-        <div class="section__card ">
-          <h5 class="card__title">生前契約銷售</h5>
-          <p>
+      <div class="col-md-6 col-12 mb-md-6 mb-4">
+        <div id="section-service__card--4" class="section-service__card " title="4">
+          <h5 class="card__title mb-lg-4 mb-md-3 mb-0">生前契約銷售</h5>
+          <p class="content d-md-block d-none">
             突遇變故時，我們關心的是您與親人心靈上所受到的創傷，因此諮詢服務時，完全針對您的需要，適時提供服務。◎設立廿四小時臨終諮詢專線，提供臨終時禮儀、證件辦理及相關事宜解答，全年無休。◎提供臨終逢喪應進行之禮儀流程及準備用品。◎提醒家屬臨終者逝世後應辦理文件等各種注意事項。
             ◎提供完整的追思喪禮服務流程說明與本公司會員權益說項整合性週邊服務。公司處理的行程。</p>
+          <div class="card__openBtn d-md-none d-flex"><i class="fas fa-chevron-down"></i></div>
         </div>
       </div>
-      <div class="col-6 mb-6">
-        <div class="section__card ">
-          <h5 class="card__title">墓園塔位銷售</h5>
-          <p>
+      <div class="col-md-6 col-12 mb-md-6 mb-4">
+        <div id="section-service__card--5" class="section-service__card" title="5">
+          <h5 class="card__title mb-lg-4 mb-md-3 mb-0">墓園塔位銷售</h5>
+          <p class="content d-md-block d-none">
             突遇變故時，我們關心的是您與親人心靈上所受到的創傷，因此，當我們提供專業的諮詢服務時，完全針對您的需要，適時提供服務。項整合性週邊服務。公司處理的行程。</p>
+          <div class="card__openBtn d-md-none d-flex"><i class="fas fa-chevron-down"></i></div>
         </div>
       </div>
-      <div class="col-6 mb-6">
-        <div class="section__card ">
-          <h5 class="card__title">遷葬服務</h5>
-          <p>
+      <div class="col-md-6 col-12 mb-md-6 mb-4">
+        <div id="section-service__card--6" class="section-service__card " title="6">
+          <h5 class="card__title mb-lg-4 mb-md-3 mb-0">遷葬服務</h5>
+          <p class="content d-md-block d-none">
             突遇變故時，我們關心的是您與親人心靈上所受到的創傷，因此，當我們提供專業的諮詢服務時，完全針對您的需要，適時提供服務。◎設立廿四小時臨終諮詢專線，提供臨終時禮儀、證件辦理及相關事宜解答，全年無休。◎提供臨終逢喪應進行之禮儀流程及準備用品。◎提醒家屬臨終者逝世後應辦理文件等各種注意事項。
             ◎介紹本公司所提供之各項整合性週邊服務。公司處理的行程。</p>
+          <div class="card__openBtn d-md-none d-flex"><i class="fas fa-chevron-down"></i></div>
         </div>
       </div>
       <div class="col-12">
-        <div class="section__card">
-          <h5 class="card__title">禮儀教育訓練服務</h5>
-          <p>
+        <div id="section-service__card--7" class="section-service__card" title="7">
+          <h5 class="card__title mb-lg-4 mb-md-3 mb-0">禮儀教育訓練服務</h5>
+          <p class="content d-md-block d-none">
             突遇變故時，我們關心的是您與親人心靈上所受到的創傷，因此，當我們提供專業的諮詢服務時，完全針對您的需要，適時提供服務。◎設立廿四小時臨終諮詢專線，提供臨終時禮儀、證件辦理及相關事宜解答，全年無休。◎提供臨終逢喪應進行之禮儀流程及準備用品。◎提醒家屬臨終者逝世後應辦理文件等各種注意事項。
             ◎提供完整的追思喪禮服務流程說明與本公司會員權益說明。 ◎介紹本公司所提供之各項整合性週邊服務。公司處理的行程。</p>
+          <div class="card__openBtn d-md-none d-flex"><i class="fas fa-chevron-down"></i></div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- 公開資訊 -->
 <section id="section-publicInfo" class="section-publicInfo section-padding pt-0">
   <h3 class="sectionTitle mb-4 text-center text-gray-darken">公開資訊文件</h3>
   <p class="sectionSubTitle mb-8 text-center text-gray-darken">仁本禮儀有限公司成立，同年得標新竹殯葬管理所羽化館合作案。</p>
   <div class="container">
     <div class="row">
-      <div class="col-3">
+      <div class="col-lg-3 col-md-6 col-12 pb-lg-0 pb-md-6 pb-4">
         <div type="button" class="card" data-toggle="modal" data-target="#documentOperation">
           <div class="card__icon mb-2">
             <img src="./assets/images/Document-iconA.svg" alt="營業文件">
@@ -158,7 +172,7 @@ current: index
           <h5 class="card__title">營業文件</h5>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-lg-3 col-md-6 col-12 pb-lg-0 pb-md-6 pb-4">
         <div type="button" class="card" data-toggle="modal" data-target="#documentFinance">
           <div class="card__icon mb-2">
             <img src="./assets/images/Document-iconB.svg" alt="財務證明">
@@ -166,7 +180,7 @@ current: index
           <h5 class="card__title">財務證明</h5>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-lg-3 col-md-6 col-12 pb-md-0 pb-4">
         <div type="button" class="card" data-toggle="modal" data-target="#documentService">
           <div class="card__icon mb-2">
             <img src="./assets/images/Document-iconC.svg" alt="服務契約">
@@ -174,7 +188,7 @@ current: index
           <h5 class="card__title">服務契約</h5>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-lg-3 col-md-6 col-12 pb-md-0 pb-4">
         <div type="button" class="card" data-toggle="modal" data-target="#documentOther">
           <div class="card__icon mb-2">
             <img src="./assets/images/Document-iconD.svg" alt="其他文件">
@@ -185,11 +199,12 @@ current: index
     </div>
   </div>
 </section>
+<!-- 相關網站連結 -->
 <section id="section-relativeWeb" class="section-relativeWeb section-padding bg-gray-200">
   <h3 class="sectionTitle mb-8 text-center text-gray-darken">相關網站連結</h3>
   <div class="container">
     <div class="row d-flex justify-content-center">
-      <div class="col-6">
+      <div class="col-md-6 col-12">
         <div class="btn-box">
           <button type="button" class="btn mb-4" data-toggle="modal" data-target="#relativeLinkGoverment">
             <h5 class="btn__txt text-gray-darken"><i class="fas fa-angle-right text-primary "></i>各地方政府殯葬網站</h5>
@@ -205,7 +220,7 @@ current: index
           </button>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-lg-4 col-md-6 col-12">
         <div class="position-relative h-100">
           <div class="section-imgBox"></div>
           <div class="imgBox__bg"></div>
@@ -214,11 +229,12 @@ current: index
     </div>
   </div>
 </section>
+<!-- 最下面聯絡的 -->
 <section class="section-contact section-padding">
   <div class="container">
     <div class="row">
       <div class="col-3">
-        <ul class="bottom-menu">
+        <ul class="bottom-menu d-lg-flex d-none">
           <li class="menu__item">
             <a href="#" class="btn" title="companyConcept"><i class="fas fa-angle-right text-primary "></i>企業理念</a>
           </li>
@@ -236,9 +252,9 @@ current: index
           </li>
         </ul>
       </div>
-      <div class="col-9">
+      <div class="col-lg-9 col-12">
         <ul class="contactlist">
-          <li class="list__item mb-7">
+          <li class="list__item mb-md-7 mb-6">
             <div class="contact-tag">
               <p class="mr-2">聯絡</p>
               <h6 class="text-dark">台北市</h6>
@@ -246,7 +262,7 @@ current: index
             <p class="subTxt text-gray-darken mb-2">台北市中山區民權東路二段135巷29弄15號</p>
             <p class="subTxt text-gray-darken">台北市中山區民權東路二段174號</p>
           </li>
-          <li class="list__item mb-7">
+          <li class="list__item mb-md-7 mb-6">
             <div class="contact-tag">
               <p class="mr-2">聯絡</p>
               <h6 class="text-dark">新北市</h6>
@@ -255,7 +271,7 @@ current: index
             <p class="subTxt text-gray-darken mb-2">新北市新店區光明街136號</p>
             <p class="subTxt text-gray-darken">新北市蘆洲區民族路408巷82之1號</p>
           </li>
-          <li class="list__item mb-7">
+          <li class="list__item mb-md-7 mb-6">
             <div class="contact-tag">
               <p class="mr-2">聯絡</p>
               <h6 class="text-dark">桃園</h6>
@@ -263,7 +279,7 @@ current: index
             <p class="subTxt text-gray-darken mb-2">桃園市桃園區民有六街93號</p>
             <p class="subTxt text-gray-darken">桃園市中壢區環保路305號5樓</p>
           </li>
-          <li class="list__item">
+          <li class="list__item mb-md-0 mb-6">
             <div class="contact-tag">
               <p class="mr-2">聯絡</p>
               <h6 class="text-dark">新竹</h6>
@@ -271,7 +287,7 @@ current: index
             <p class="subTxt text-gray-darken mb-2">新竹市北區成德路160號</p>
             <p class="subTxt text-gray-darken">新竹市和平路171號1樓</p>
           </li>
-          <li class="list__item">
+          <li class="list__item mb-md-0 mb-6">
             <div class="contact-tag">
               <p class="mr-2">聯絡</p>
               <h6 class="text-dark">台中</h6>
@@ -290,6 +306,8 @@ current: index
     </div>
   </div>
 </section>
+
+
 <!-- Modal -->
 <!-- 營業文件 -->
 <div class="modal fade" id="documentOperation" tabindex="-1" role="dialog" aria-labelledby="documentOperationTitle"
@@ -433,28 +451,34 @@ current: index
           </li>
           <li class="linkList__item linkList__item--100 d-flex align-items-center flex-wrap">
             <p class="text-nowrap py-3 px-4 text-gray-darken w-100">年度信託業者編制之信託財產結算報告書 - 109年度</p>
-            <a class="item__link w-auto" href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10901.pdf" target="_blank"><i
-                class="fas fa-link mr-2"></i>
+            <a class="item__link w-auto"
+              href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10901.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
               <p>1月</p>
             </a>
-            <a class="item__link w-auto" href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10902.pdf" target="_blank"><i
-                class="fas fa-link mr-2"></i>
+            <a class="item__link w-auto"
+              href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10902.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
               <p>2月</p>
             </a>
-            <a class="item__link w-auto" href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10903.pdf" target="_blank"><i
-                class="fas fa-link mr-2"></i>
+            <a class="item__link w-auto"
+              href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10903.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
               <p>3月</p>
             </a>
-            <a class="item__link w-auto" href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10904.pdf" target="_blank"><i
-                class="fas fa-link mr-2"></i>
+            <a class="item__link w-auto"
+              href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10904.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
               <p>4月</p>
             </a>
-            <a class="item__link w-auto" href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10905.pdf" target="_blank"><i
-                class="fas fa-link mr-2"></i>
+            <a class="item__link w-auto"
+              href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10905.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
               <p>5月</p>
             </a>
-            <a class="item__link w-auto" href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10906.pdf" target="_blank"><i
-                class="fas fa-link mr-2"></i>
+            <a class="item__link w-auto"
+              href="https://www.mysie.com.tw/Public/%E4%BF%A1%E8%A8%97%E5%B0%88%E6%88%B6%E8%B2%A1%E7%94%A2%E5%A0%B1%E5%91%8A%E6%9B%B8-10906.pdf"
+              target="_blank"><i class="fas fa-link mr-2"></i>
               <p>6月</p>
             </a>
           </li>
