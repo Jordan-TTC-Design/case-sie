@@ -61,20 +61,25 @@ $colors: map-merge(
     "cyan":       $cyan,
     "white":      $white,
     "gray":       $gray-600,
-    "gray-dark":  $gray-800
+    // "gray-darken":  #646464
+    
   ),
   $colors
 );
 //**針對每次專案的色彩計畫不同，這裡修改與新增：
 //(新增顏色註記：)
-$primary:       $blue !default;
+$primary:       #F0B819 !default;//$blue,
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$dark:          #1d1d1d !default;//$gray-800
+$pr-light:       #FCF1D1 !default;   
+$pr-darken:       #D98D0B !default; 
+$gray-darken:    #646464;  
+$gray-line:      #E2E2E2;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -88,7 +93,11 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "gray-darken":  $gray-darken,
+    "pr-light":   $pr-light,
+    "pr-darken":  $pr-darken,
+    "gray-line":  $gray-line
   ),
   $theme-colors
 );

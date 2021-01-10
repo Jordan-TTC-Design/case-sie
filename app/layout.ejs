@@ -5,71 +5,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%- title %></title>
+  <title>
+    <%- title %>
+  </title>
   <!-- swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <!-- aos -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- bs4 -->
+  <!-- fontawsome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <!-- my -->
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+  <header class="header">
+    <div class="container-fluid">
+      <div class="row d-flex flex-row">
+        <div class="header__logoBox">
+          <h1 class="logoBox__logo"><a href="#"><img src="./assets/images/logo.png" alt="logo"></a></h1>
+          <h5 class="logoBox__txt text-center text-gray-darken">優禮服務</h5>
+        </div>
+        <ul class="header__nav  d-lg-flex d-none">
+          <li class="nav__item mr-4">
+            <a class="nav__link" href="#" title="companyConcept">企業理念</a>
+          </li>
+          <li class="nav__item mr-4">
+            <a class="nav__link" href="#" title="history">沿革</a>
+          </li>
+          <li class="nav__item mr-4">
+            <a class="nav__link" href="#" title="service">禮儀服務</a>
+          </li>
+          <li class="nav__item mr-4">
+            <a class="nav__link" href="#" title="publicInfo">公開資訊文件</a>
+          </li>
+          <li class="nav__item mr-4">
+            <a class="nav__link" href="#" title="relativeWeb">相關網站連結</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link  callMe  rounded-pill" href="tel:03-523-9595"><i
+                class="fas fa-phone-alt mr-1"></i>客服專線：03-523-9595</a>
+          </li>
+        </ul>
+        <div class="header__nav d-lg-none">
+          <nav class="mobile-nav-wrap d-lg-none disabled" role="navigation">
+            <h2 class="logoBox__logo"><a href="#"><img src="./assets/images/logo.png" alt="logo"></a></h2>
+            <h4 class="content mb-6">服務<br>
+              <span class="text-primary">，</span>
+              用心<br>
+              <span class="text-primary">，</span>
+              禮儀</h4>
+            <ul class="header__nav--sm  d-lg-none d-flex">
+              <li class="nav__item mr-4">
+                <a class="nav__link" href="#" title="companyConcept">企業理念</a>
+              </li>
+              <li class="nav__item mr-4">
+                <a class="nav__link" href="#" title="history">沿革</a>
+              </li>
+              <li class="nav__item mr-4">
+                <a class="nav__link" href="#" title="service">禮儀服務</a>
+              </li>
+              <li class="nav__item mr-4">
+                <a class="nav__link" href="#" title="publicInfo">公開資訊文件</a>
+              </li>
+              <li class="nav__item mr-4">
+                <a class="nav__link" href="#" title="relativeWeb">相關網站連結</a>
+              </li>
+              <li class="nav__item ">
+                <a class="nav__link  callMe  rounded-pill" href="tel:03-523-9595"><i
+                    class="fas fa-phone-alt mr-1"></i>客服專線：03-523-9595</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="bg-black disabled d-lg-none"></div>
+          <button class="header__nav--hamburger  d-lg-none" type="button">
+            <i class="fas fa-bars" id="header__nav--hamburger-icon"></i>
+          </button>
+        </div>
+      </div>
     </div>
-  </nav>
+  </header>
+
+  
+
 
   <%- contents %>
+    <footer class="footer">
+      <div class="container d-flex justify-content-between align-items-end position-relative">
+        <div>
+          <h2 class="subTitle text-gray-darken mb-6">優禮服務股份有限公司</h2>
+          <ul class="conpanyInfoList d-flex">
+            <li class="list__item mb-4">
+              <p class="subTxt text-gray-darken"><span class="mr-2">聯絡地址</span>新竹市成德路160號</p>
+            </li>
+            <li class="list__item mb-4">
+              <p class="subTxt text-gray-darken"><span class="mr-2">客服專線</span>03-523-9595</p>
+            </li>
+            <li class="list__item ">
+              <p class="subTxt text-gray-darken"><span class="mr-2">傳真專線</span>03-527-7550</p>
+            </li>
+            <li class="list__item ">
+              <p class="subTxt text-gray-darken"><span class="mr-2">申訴專線</span>陳慶文 / 0800-602-777</p>
+            </li>
+          </ul>
+        </div>
+        <p class="copyRight">優禮服務股份有限公司 版權所有©2020 All Rights Reserved.</p>
+        <div id="pageUp" class="pageUp mb-1">
+          <i class="fas fa-arrow-up"></i>
+          <p>PAGE UP</p>
+        </div>
+      </div>
+    </footer>
 
-  <footer class="footer">
-    footer
-  </footer>
-  <!-- 外掛 -->
-  <script src="./assets/js/vendors.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <!-- 外掛自訂 -->
-  <script src="./assets/js/helpers/swiper.js"></script>
-  <!-- 自訂 -->
-  <script src="./assets/js/all.js"></script>
+    <!-- 外掛 -->
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- 外掛自訂 -->
+    <script src="./assets/js/helpers/swiper.js"></script>
+    <!-- 自訂 -->
+    <script src="./assets/js/all.js"></script>
 </body>
 
 </html>

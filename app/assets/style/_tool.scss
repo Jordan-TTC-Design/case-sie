@@ -52,3 +52,36 @@ background-image: linear-gradient(to right, #ccc 0%, #ccc 50%, transparent 50%);
 background-size: 8px 1px;
 background-repeat: repeat-x;
 }
+//文字
+.pageTitle{
+    font-size: 48px;
+}
+.sectionTitle{
+    font-size: 36px;
+}
+.subTitle{
+    font-size: 24px;
+}
+.txt{
+    font-size: 16px;
+}
+.subTxt{
+    font-size: 14px;
+}
+@media (max-width: 767px){
+    .pageTitle{
+        font-size: 36px;
+    }
+    .sectionTitle{
+        font-size: 24px;
+    }
+    .subTitle{
+        font-size: 18px;
+    }
+    .txt{
+        font-size: 14px;
+    }
+    .subTxt{
+        font-size: 14px;
+    }
+    }

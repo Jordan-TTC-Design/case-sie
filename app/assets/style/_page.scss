@@ -1,0 +1,377 @@
+//第一個畫面
+.section-firstView{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    .section-bg{
+        height: 100%;
+        background-size: cover;
+        background-position:  center center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.3)),url(../images/sunset-two-people.jpg);
+    }
+    .banner__txtBox{
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        @media (max-width: 767px){
+        left: 50%;
+        transform: translateX(-50%);
+        }
+    }
+}
+// 側邊登入
+.login-box{
+    position: fixed;
+    right: 0;
+    top: 160px;
+    z-index: 600;
+    .login-btn{
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+        color: $white;
+        padding: 12px 8px;
+        letter-spacing: 4px;
+        cursor: pointer;
+        &:hover{
+            color:$dark;
+        }
+    }
+    .login--family{
+        border-radius: 8px 0 0 0;
+        background-color: $pr-darken;
+    }
+    .login--company{
+        background-color: $primary;
+        border-radius: 0 0 0 8px;
+    }
+    // @media (max-width: 767px){
+    //     top: 50%;
+    // }
+}
+//企業理念
+.section-companyConcept{
+    position: relative;
+    .section-bg{
+        height: 200px;
+        width: 100%;
+        background-color: $pr-light;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -2;
+    }
+    .txtBox{
+        padding: 12px 36px;
+        @media (max-width:767px){
+            text-align: center;
+        }
+    }
+    .pageTitle{
+        font-weight: bold;
+        @media (max-width:767px){
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+    .section-imgBox{
+        position: relative;
+        height: 100%;
+        border-radius: 8px;
+        background-image: url(../images/candle.jpg);
+        background-size: cover;
+        .imgBox__bg{
+              width: 100%;
+              height: 100%;
+              border-radius: 8px;
+              background-color:$primary;
+              position: absolute;
+              top: 12px;
+              right: 12px;
+              z-index: -1;
+          }
+          @media (max-width: 767px){
+            height: 320px;
+            }
+    }  
+    
+}
+//沿革
+.section-history{
+    background-color: $pr-light;
+}
+.history-row{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    &::after{
+        content: '';
+        // width: 80%;
+        height: 4px;
+        background-color: $primary;
+        position: absolute;
+        top: 62px;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        margin: 0 10%;
+        @media (max-width: 920px) {
+            width: 4px;
+            height: 80%;
+            left: 0%;
+            top: 10px;
+        }
+        @media (max-width: 767px) {
+            left: 5%;
+        }
+        @media (max-width: 500px) {
+            left: 7%;
+        }
+        @media (max-width: 450px) {
+            left: 10%;
+        }
+        @media (max-width: 400px) {
+            height: 90%;
+            left: 12%;
+        }
+    }
+    .row__item{
+        width: 20%;
+        margin: 0 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $gray-darken;
+    }
+    .history__year,.history__feature{
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+        background-color: $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:$dark;
+    }
+    .history__feature{
+        background-color: $pr-light;
+        border: 3px dashed $primary;
+    }
+    .txtContent{
+        text-align: center;
+    }
+    @media (max-width: 920px) {
+    flex-direction: column;
+    .row__item{
+        width: 100%;
+        flex-direction: row;
+        margin: 0 0 24px 0;
+        align-items: center;
+    }
+    .history__year{
+        margin-right: 12px;
+    }
+    .history__feature{
+        margin-left: 36px;
+    }
+    .txtContent{
+        text-align: left;
+    }
+    }
+}
+//禮儀服務
+.section-service__card{
+    background-color: $pr-light;
+    border: 1px solid $pr-light;
+    padding: 32px 64px;
+    border-radius: 8px;
+    position: relative;
+    height: 100%;
+    @media (max-width: 1200px) {
+        padding: 32px 48px;
+    }
+    @media (max-width: 920px) {
+        padding: 16px 40px;
+    }
+    
+    .card__title{
+        font-weight: bold;
+        color: $dark;
+        margin-bottom: 24px;
+    }
+    &:hover{
+        border: 1px solid $primary;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        background-color: $primary;
+        top: 0;
+        left: 0;
+        width: 48px;
+        height: 48px;
+        border-radius: 8px 0 8px 0;
+        @media (max-width: 1200px) {
+            width: 32px;
+            height: 32px;
+        }
+        @media (max-width: 767px) {
+            display: none;
+            // width: 24px;
+            // height: 24px;
+        }
+    }
+    .card__openBtn{
+        height: 100%;
+        width: 100%;
+        // background-color: $white;
+        // border: 1px solid $primary;
+        border-radius: 50%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: absolute;
+        padding-left: 18px;
+        padding-top: 20px;
+        // padding-top: 12px;
+        right: 0;
+        top: 0;
+        color:$pr-darken;
+        
+    }
+    .turn180{
+        -moz-transform:scaleY(-1);
+        -webkit-transform:scaleY(-1);
+        -o-transform:scaleY(-1);
+        transform:scaleY(-1);
+    }
+}
+// 公開資料
+.section-publicInfo{
+
+    .card{
+        padding: 44px 0;
+        border: 1px solid $gray-line;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:hover{
+        border: 1px solid $primary;
+        }
+    }
+}
+
+
+//相關網站
+.section-relativeWeb{
+    background-color: #F7F7F7;
+  .section-imgBox{
+    position: relative;
+    height: 100%;
+    border-radius: 8px;
+    background-image: url(../images/candle.jpg);
+    background-size: cover;
+    z-index: 2;
+  }  
+  .imgBox__bg{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color:$primary;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 0;
+  }
+  .btn-box{
+    .btn{
+        width: 100%;
+        padding: 24px ;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition:all .3s;
+    }
+    .btn__txt i{
+        margin-right: 16px;
+    } 
+    .btn:hover{
+        padding-left: 48px;
+        transition:all .3s;
+    }
+    .btn__txt{
+        font-size: 24px;
+        color: $gray-darken;
+        
+    }
+  }
+}
+//聯絡地址
+.section-contact{
+    background-color: #EDEDE7;
+    .contactlist{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .list__item{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    @media (max-width:767px){
+        .list__item{
+        width: 100%;
+        }
+    }
+}
+.contact-tag{
+    background-color: $white;
+    min-height: 32px;
+    width: 100px;
+    padding:0 8px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    color:#9d9d9d;
+    position: relative;
+    margin-bottom: 12px;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        top: 0px;
+        right: -32px;
+        border-style: solid;
+        border-width: 16px;
+        border-color: transparent  transparent  transparent $white;
+        
+    }
+}
+//首頁下面的聯絡方式
+.bottom-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-right: 1px solid $gray-darken;
+    padding-right: 32px;
+    .btn{
+        width: 100%;
+        background-color: $white;
+        position: relative;
+        i{
+            position: absolute;
+            left: 24px;
+            top: 50%;
+            transform: translateY(-50%)
+        }
+        &:hover{
+            color:$pr-darken;
+        }
+        
+    }
+}

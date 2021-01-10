@@ -1,0 +1,68 @@
+//撰寫首頁modal視窗
+//改變原本bs4的設定 
+.modal-header{
+    border-bottom: 0;
+    padding-top: 48px;
+    position: relative;
+    &__txtBox{
+        width: 100%;
+        text-align: center;
+    }
+    .close{
+        position: absolute;
+        right: 32px;
+        top: 32px;
+        // background-color: $gray-300;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+.modal-footer{
+    border-top: 0;
+}
+//撰寫moadl的body
+.modal-body{
+    padding: 16px 32px;
+}
+.modal__linkList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .linkList__item{
+        border-bottom: 1px solid $primary;
+        width: calc(50% - 8px);
+        @media (max-width:767px){
+            width: 100%;
+        }
+    }
+    
+    .linkList__item--100{
+        width:100%;
+    }
+    .item__link{
+        min-height: 44px;
+        width: 100%;
+        padding: 10px 16px;
+        display: flex;
+        transition:all .3s;
+        color:$gray-darken;
+        .fa-link{
+            color:$primary;
+        }
+        &:hover{
+            padding-left: 36px;
+            color:$pr-darken;
+        }   
+    }
+}
+@media (max-width:767px){
+    .modal{
+        width: 80%;
+        left: 10%;
+    }
+}
