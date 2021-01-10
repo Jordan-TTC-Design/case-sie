@@ -21,6 +21,7 @@
         height: 44px;
     }
 }
+
 .modal-footer{
     border-top: 0;
 }
@@ -35,6 +36,9 @@
     .linkList__item{
         border-bottom: 1px solid $primary;
         width: calc(50% - 8px);
+        @media (max-width:767px){
+            width: 100%;
+        }
     }
     
     .linkList__item--100{
@@ -54,5 +58,11 @@
             padding-left: 36px;
             color:$pr-darken;
         }   
+    }
+}
+@media (max-width:767px){
+    .modal{
+        width: 80%;
+        left: 10%;
     }
 }

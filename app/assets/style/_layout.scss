@@ -30,10 +30,15 @@ position: fixed;
     height: 80px;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     background-color: $white;
     padding-right: 50px;
+    
     &.header--scroll{
         background-color: rgba(255,255,255,0.95);
+    }
+    .nav__item{
+        transition:all .3s;
     }
     .nav__link{
         color:$gray-darken;
@@ -55,20 +60,98 @@ position: fixed;
         border:1px solid $primary;
     }
 }
-
+.header__nav--hamburger{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    border: 0;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color:$pr-darken;
+    position: fixed;
+    z-index: 2000;
+}
 .section-padding{
     padding: 80px 0;
+    @media (max-width: 767px){
+        padding: 48px 0;
+    }
 }
-
+.hamburgerMenu{
+    z-index: 5000;
+    padding: 32px 24px;
+}
+.bg-black.disabled {
+    left: -100%;
+    transition:all .3s;
+}
+.bg-black{
+    width: 20%;
+    height: 100%;
+    background-color: $pr-darken;
+    position: fixed;
+    opacity: .9;
+    top: 0;
+    left: 0;
+    transition:all .3s;
+}
+.mobile-nav-wrap{
+    background-color: #fff;
+    height: 100%;
+    right: 0;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    z-index: 800;
+    display: flex;
+    flex-direction: column;
+    transition:all .3s;
+    padding: 16px 32px;
+    .logoBox__logo{
+        img{
+            height: 44px;
+        }
+        margin-bottom: 24px;
+    }
+    .content{
+        position: relative;
+        text-align: right;
+        padding: 24px 24px;
+        border-top: 1px solid $gray-line;
+        border-bottom: 1px solid $gray-line;
+    }
+    }
+    
+    .header__nav--sm{
+        flex-grow: 1;
+        flex-direction: column;
+        align-items: flex-end;
+        .nav__item:hover{
+            padding-right: 24px;
+        }
+        .nav__item:last-child{
+            align-self: center;
+            position: absolute;
+            bottom: 36px;
+        }
+    }
+    .mobile-nav-wrap.disabled {
+        right: -100%;
+        transition:all .3s;
+  }
 // footer
 .footer{
     background-color: #F7F7F7;
     padding: 32px 50px;
-    
     .copyRight{
         font-size: 10px;
         color:$gray-darken;
     }
+@media (max-width: 767px){
+    padding: 32px 15px;
+}
 }
 .conpanyInfoList{
     flex-wrap: wrap;

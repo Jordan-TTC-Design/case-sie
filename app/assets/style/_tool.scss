@@ -68,3 +68,20 @@ background-repeat: repeat-x;
 .subTxt{
     font-size: 14px;
 }
+@media (max-width: 767px){
+    .pageTitle{
+        font-size: 36px;
+    }
+    .sectionTitle{
+        font-size: 24px;
+    }
+    .subTitle{
+        font-size: 18px;
+    }
+    .txt{
+        font-size: 14px;
+    }
+    .subTxt{
+        font-size: 14px;
+    }
+    }

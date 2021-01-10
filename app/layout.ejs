@@ -22,38 +22,72 @@
 <body>
   <header class="header">
     <div class="container-fluid">
-      <div class="row d-flex">
-        <!-- <div class="col-2"> -->
+      <div class="row d-flex flex-row">
         <div class="header__logoBox">
           <h1 class="logoBox__logo"><a href="#"><img src="./assets/images/logo.png" alt="logo"></a></h1>
           <h5 class="logoBox__txt text-center text-gray-darken">優禮服務</h5>
         </div>
-        <!-- </div> -->
-        <ul class="header__nav  d-flex justify-content-end align-items-center">
-
-          <li class="nav__item mr-4" >
+        <ul class="header__nav  d-lg-flex d-none">
+          <li class="nav__item mr-4">
             <a class="nav__link" href="#" title="companyConcept">企業理念</a>
           </li>
-          <li class="nav__item mr-4" >
+          <li class="nav__item mr-4">
             <a class="nav__link" href="#" title="history">沿革</a>
           </li>
-          <li class="nav__item mr-4" >
+          <li class="nav__item mr-4">
             <a class="nav__link" href="#" title="service">禮儀服務</a>
           </li>
           <li class="nav__item mr-4">
             <a class="nav__link" href="#" title="publicInfo">公開資訊文件</a>
           </li>
           <li class="nav__item mr-4">
-            <a class="nav__link" href="#"  title="relativeWeb">相關網站連結</a>
+            <a class="nav__link" href="#" title="relativeWeb">相關網站連結</a>
           </li>
           <li class="nav__item">
             <a class="nav__link  callMe  rounded-pill" href="tel:03-523-9595"><i
                 class="fas fa-phone-alt mr-1"></i>客服專線：03-523-9595</a>
           </li>
         </ul>
+        <div class="header__nav d-lg-none">
+          <nav class="mobile-nav-wrap d-lg-none disabled" role="navigation">
+            <h2 class="logoBox__logo"><a href="#"><img src="./assets/images/logo.png" alt="logo"></a></h2>
+            <h4 class="content mb-6">服務<br>
+              <span class="text-primary">，</span>
+              用心<br>
+              <span class="text-primary">，</span>
+              禮儀</h4>
+            <ul class="header__nav--sm  d-lg-none d-flex">
+              <li class="nav__item mr-4">
+                <a class="nav__link" href="#" title="companyConcept">企業理念</a>
+              </li>
+              <li class="nav__item mr-4">
+                <a class="nav__link" href="#" title="history">沿革</a>
+              </li>
+              <li class="nav__item mr-4">
+                <a class="nav__link" href="#" title="service">禮儀服務</a>
+              </li>
+              <li class="nav__item mr-4">
+                <a class="nav__link" href="#" title="publicInfo">公開資訊文件</a>
+              </li>
+              <li class="nav__item mr-4">
+                <a class="nav__link" href="#" title="relativeWeb">相關網站連結</a>
+              </li>
+              <li class="nav__item ">
+                <a class="nav__link  callMe  rounded-pill" href="tel:03-523-9595"><i
+                    class="fas fa-phone-alt mr-1"></i>客服專線：03-523-9595</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="bg-black disabled d-lg-none"></div>
+          <button class="header__nav--hamburger  d-lg-none" type="button">
+            <i class="fas fa-bars" id="header__nav--hamburger-icon"></i>
+          </button>
+        </div>
       </div>
     </div>
   </header>
+
+  
 
 
   <%- contents %>

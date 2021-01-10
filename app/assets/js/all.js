@@ -62,17 +62,11 @@ $(document).ready(() => {
     //進行運動
     $("html,body").animate({ scrollTop: lastScrollPoint }, 800);
   });
-  var serviceList = document.querySelector('.list');
-  //展開禮儀服務內容
-  $(".section-service__card,.this").click(function (event) {
-    let cardNumber=this.title;
-    console.log(cardNumber);
-    var cardId = "#section-service__card--" + cardNumber +'__content';
-    console.log(cardId);
-    // $('id').toggleClass('d-none');
-  // $('cardId).removeClass('d-none');
-  // alert(id)
-  // $('.card__openBtn').addClass('w-100');
-
+  //展開漢堡選單
+  $('.header__nav--hamburger').click(function(e){
+    e.preventDefault();
+    // $(this).toggleClass('open');
+    $('.mobile-nav-wrap').toggleClass('disabled');
+    $('.bg-black').toggleClass('disabled');
   });
 });
