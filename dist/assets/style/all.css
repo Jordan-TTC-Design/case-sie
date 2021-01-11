@@ -14375,6 +14375,11 @@ a:hover {
   font-size: 14px;
 }
 
+.box-shadow {
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 767px) {
   .pageTitle {
     font-size: 36px;
@@ -14711,7 +14716,7 @@ a:hover {
 
 .section-firstView .banner__txtBox {
   position: absolute;
-  bottom: 10%;
+  bottom: 16%;
   left: 5%;
 }
 
