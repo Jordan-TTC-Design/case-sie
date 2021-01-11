@@ -33,6 +33,7 @@
         padding: 12px 8px;
         letter-spacing: 4px;
         cursor: pointer;
+        min-width: 44px;
         &:hover{
             color:$dark;
         }
@@ -45,9 +46,7 @@
         background-color: $primary;
         border-radius: 0 0 0 8px;
     }
-    // @media (max-width: 767px){
-    //     top: 50%;
-    // }
+
 }
 //企業理念
 .section-companyConcept{
@@ -223,21 +222,18 @@
     }
     .card__openBtn{
         height: 100%;
-        // width: 100%;
-        // background-color: $white;
-        // border: 1px solid $primary;
-        // border-radius: 50%;
+
         align-items: flex-start;
         justify-content: flex-start;
         position: absolute;
         padding-left: 16px;
         padding-top: 20px;
-        // padding-top: 12px;
         right: 0;
         left: 0;
         top: 0;
         color:$pr-darken;
         background-color: transparent;
+        cursor: pointer;
     }
     .turn180{
         -moz-transform:scaleY(-1);
