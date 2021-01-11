@@ -14247,7 +14247,7 @@ a.text-gray-line:hover, a.text-gray-line:focus {
 }
 
 @media (max-width: 767px) {
-  .modal {
+  .modal-content {
     width: 80%;
     left: 10%;
   }
@@ -14613,7 +14613,10 @@ a:hover {
 
 @media (max-width: 767px) {
   .footer {
-    padding: 32px 15px;
+    padding: 48px 15px;
+  }
+  .footer .subTitle {
+    font-size: 48px;
   }
 }
 
@@ -14625,6 +14628,17 @@ a:hover {
 .conpanyInfoList .list__item {
   width: 36%;
   margin-right: 16px;
+}
+
+@media (max-width: 767px) {
+  .conpanyInfoList {
+    border-bottom: 1px solid #E2E2E2;
+    border-top: 1px solid #E2E2E2;
+  }
+  .conpanyInfoList .list__item {
+    width: 100%;
+    margin-right: 0px;
+  }
 }
 
 .pageUp {
@@ -14660,6 +14674,12 @@ a:hover {
   color: #D98D0B;
 }
 
+@media (max-width: 767px) {
+  .pageUp {
+    top: -86px;
+  }
+}
+
 .section-firstView {
   position: relative;
   height: 100vh;
@@ -14693,8 +14713,8 @@ a:hover {
 .login-box {
   position: fixed;
   right: 0;
-  top: 160px;
-  z-index: 600;
+  top: 180px;
+  z-index: 750;
 }
 
 .login-box .login-btn {
@@ -14965,8 +14985,6 @@ a:hover {
 
 .section-service__card .card__openBtn {
   height: 100%;
-  width: 100%;
-  border-radius: 50%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -14974,11 +14992,13 @@ a:hover {
       -ms-flex-pack: start;
           justify-content: flex-start;
   position: absolute;
-  padding-left: 18px;
+  padding-left: 16px;
   padding-top: 20px;
   right: 0;
+  left: 0;
   top: 0;
   color: #D98D0B;
+  background-color: transparent;
 }
 
 .section-service__card .turn180 {

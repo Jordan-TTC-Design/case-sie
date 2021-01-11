@@ -23,8 +23,8 @@
 .login-box{
     position: fixed;
     right: 0;
-    top: 160px;
-    z-index: 600;
+    top: 180px;
+    z-index: 750;
     .login-btn{
         display: block;
         font-size: 24px;
@@ -223,20 +223,21 @@
     }
     .card__openBtn{
         height: 100%;
-        width: 100%;
+        // width: 100%;
         // background-color: $white;
         // border: 1px solid $primary;
-        border-radius: 50%;
+        // border-radius: 50%;
         align-items: flex-start;
         justify-content: flex-start;
         position: absolute;
-        padding-left: 18px;
+        padding-left: 16px;
         padding-top: 20px;
         // padding-top: 12px;
         right: 0;
+        left: 0;
         top: 0;
         color:$pr-darken;
-        
+        background-color: transparent;
     }
     .turn180{
         -moz-transform:scaleY(-1);
