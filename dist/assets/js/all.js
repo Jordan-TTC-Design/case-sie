@@ -75,6 +75,26 @@ $(document).ready(function () {
     $('.mobile-nav-wrap').toggleClass('disabled');
     $('.bg-black').toggleClass('disabled');
   });
+  $(".header__nav--sm li a,.this").click(function (event) {
+    event.preventDefault(); //先中止前一個項目
+
+    event.stopPropagation(); //開始
+
+    var scrollPoint = 0; //對應menu的a的title
+
+    var sectionTitle = this.title;
+    var id = "#section-" + sectionTitle; //找到每個section位置y值
+
+    scrollPoint = $(id).offset().top;
+    var lastScrollPoint = scrollPoint - 120; //關掉選單
+
+    $('.mobile-nav-wrap').toggleClass('disabled');
+    $('.bg-black').toggleClass('disabled'); //進行運動
+
+    $("html,body").animate({
+      scrollTop: lastScrollPoint
+    }, 800);
+  });
 });
 "use strict";
 

@@ -14426,6 +14426,12 @@ a:hover {
   width: 80px;
 }
 
+@media (max-width: 767px) {
+  .header__logoBox.header--scroll {
+    padding-left: 15px;
+  }
+}
+
 .header__nav {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -14442,6 +14448,12 @@ a:hover {
           justify-content: flex-end;
   background-color: #fff;
   padding-right: 50px;
+}
+
+@media (max-width: 767px) {
+  .header__nav {
+    padding-right: 15px;
+  }
 }
 
 .header__nav.header--scroll {
@@ -14725,6 +14737,7 @@ a:hover {
   padding: 12px 8px;
   letter-spacing: 4px;
   cursor: pointer;
+  min-width: 44px;
 }
 
 .login-box .login-btn:hover {
@@ -14999,6 +15012,7 @@ a:hover {
   top: 0;
   color: #D98D0B;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .section-service__card .turn180 {

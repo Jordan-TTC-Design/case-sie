@@ -24,6 +24,9 @@ position: fixed;
         width: 80px;
         }
     }
+    @media (max-width:767px){
+        padding-left: 15px;
+    }
 }
 .header__nav{
     flex-grow: 1;
@@ -33,7 +36,9 @@ position: fixed;
     justify-content: flex-end;
     background-color: $white;
     padding-right: 50px;
-    
+    @media (max-width:767px){
+        padding-right: 15px;
+    }
     &.header--scroll{
         background-color: rgba(255,255,255,0.95);
     }
