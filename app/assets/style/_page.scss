@@ -18,6 +18,24 @@
         transform: translateX(-50%);
         }
     }
+    
+    .callMe{
+        // border:1px solid $gray-line;
+        position: absolute;
+        color:$gray-darken;
+        background-color: rgba(255,255,255,0.8);
+        padding: 4px 16px;
+        min-height: 44px;
+        line-height: 44px;
+        font-weight: bold;
+        b
+        .fa-phone-alt{
+            color:$primary;
+        }
+    }
+    .callMe:hover{
+        color:$pr-darken;
+    }
 }
 // 側邊登入
 .login-box{
@@ -37,6 +55,7 @@
         &:hover{
             color:$dark;
         }
+       
     }
     .login--family{
         border-radius: 8px 0 0 0;
@@ -46,7 +65,9 @@
         background-color: $primary;
         border-radius: 0 0 0 8px;
     }
-
+    @media (max-width:767px){
+        top: 50%;
+    }
 }
 //企業理念
 .section-companyConcept{

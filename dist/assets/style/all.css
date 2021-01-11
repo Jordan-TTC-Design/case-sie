@@ -14724,6 +14724,24 @@ a:hover {
   }
 }
 
+.section-firstView .callMe {
+  position: absolute;
+  color: #646464;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 4px 16px;
+  min-height: 44px;
+  line-height: 44px;
+  font-weight: bold;
+}
+
+.section-firstView .callMe b .fa-phone-alt {
+  color: #F0B819;
+}
+
+.section-firstView .callMe:hover {
+  color: #D98D0B;
+}
+
 .login-box {
   position: fixed;
   right: 0;
@@ -14754,6 +14772,12 @@ a:hover {
 .login-box .login--company {
   background-color: #F0B819;
   border-radius: 0 0 0 8px;
+}
+
+@media (max-width: 767px) {
+  .login-box {
+    top: 50%;
+  }
 }
 
 .section-companyConcept {

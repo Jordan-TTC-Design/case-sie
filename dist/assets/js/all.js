@@ -26,30 +26,8 @@ $(document).ready(function () {
   }); //header menu的滾動
 
   $(".header__nav li a,.this").click(function (event) {
-    event.preventDefault(); //先中止前一個項目
-
-    event.stopPropagation(); //開始
-
-    var scrollPoint = 0; // console.log('ok');
-    //對應menu的a的title
-
-    var sectionTitle = this.title;
-    var id = "#section-" + sectionTitle; // console.log(id);
-    //找到每個section位置y值
-
-    scrollPoint = $(id).offset().top;
-    var lastScrollPoint = scrollPoint - 120; // console.log(scrollPoint);
-    // console.log(lastScrollPoint);
-    //進行運動
-
-    $("html,body").animate({
-      scrollTop: lastScrollPoint
-    }, 800);
-  }); //bottom menu的滾動
-
-  $(".bottom-menu li a,.this").click(function (event) {
-    event.preventDefault(); //先中止前一個項目
-
+    // event.preventDefault()
+    //先中止前一個項目
     event.stopPropagation(); //開始
 
     var scrollPoint = 0; // console.log('ok');
@@ -76,8 +54,8 @@ $(document).ready(function () {
     $('.bg-black').toggleClass('disabled');
   });
   $(".header__nav--sm li a,.this").click(function (event) {
-    event.preventDefault(); //先中止前一個項目
-
+    // event.preventDefault()
+    //先中止前一個項目
     event.stopPropagation(); //開始
 
     var scrollPoint = 0; //對應menu的a的title
