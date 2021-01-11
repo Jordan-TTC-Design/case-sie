@@ -36,6 +36,7 @@
     .linkList__item{
         border-bottom: 1px solid $primary;
         width: calc(50% - 8px);
+        flex-wrap: wrap;
         @media (max-width:767px){
             width: 100%;
         }

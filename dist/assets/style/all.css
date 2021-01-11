@@ -14212,6 +14212,8 @@ a.text-gray-line:hover, a.text-gray-line:focus {
 .modal__linkList .linkList__item {
   border-bottom: 1px solid #F0B819;
   width: calc(50% - 8px);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (max-width: 767px) {
